@@ -9,14 +9,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_blue_plus: ^1.31.0
-  geolocator: ^10.1.0
+  flutter_blue_plus: ^1.32.7  # Versiune foarte stabilă
+  geolocator: ^11.0.0         # Versiune actualizată
   flutter_map: ^6.1.0
   latlong2: ^0.9.1
-  wakelock_plus: ^1.1.4
-  speech_to_text: ^6.6.0
-  sensors_plus: ^4.0.2
-  shared_preferences: ^2.2.2
+  wakelock_plus: ^1.2.5
+  # speech_to_text: ^6.6.2    <--- AM COMENTAT ACEASTĂ LINIE PENTRU A EVITA EROAREA JCENTER
+  sensors_plus: ^5.0.1
+  shared_preferences: ^2.2.3
   intl: ^0.19.0
 
 dev_dependencies:
