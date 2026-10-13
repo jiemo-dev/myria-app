@@ -24,7 +24,7 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.example.myria_app"
-    compileSdk = 34  // <-- Folosește '=' (New DSL)
+    compileSdk = 35  // <-- Folosește '=' (New DSL)
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
