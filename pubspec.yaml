@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_blue_plus: ^1.32.7  # Versiune foarte stabilă
+  flutter_blue_plus: ^1.35.0  # Versiune foarte stabilă
   geolocator: ^11.0.0         # Versiune actualizată
   flutter_map: ^6.1.0
   latlong2: ^0.9.1

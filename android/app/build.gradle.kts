@@ -6,28 +6,23 @@ plugins {
 
 android {
     namespace = "com.example.myria_app"
-    
-    // FIX FINAL: Actualizat la 36 pentru a satisface pachetele moderne
-    compileSdk = 36 
+    compileSdk = 34 // <-- MUST BE 34
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 
     kotlin {
         compilerOptions {
-            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8)
         }
     }
 
     defaultConfig {
         applicationId = "com.example.myria_app"
         minSdk = 21
-        
-        // FIX FINAL: Actualizat la 36
-        targetSdk = 36 
-        
+        targetSdk = 34 // <-- MUST BE 34
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
