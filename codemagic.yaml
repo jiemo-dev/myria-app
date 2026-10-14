@@ -3,7 +3,7 @@ workflows:
     name: Android APK Build
     instance_type: mac_mini_m2
     environment:
-      flutter: 3.24.5
+      flutter: 3.27.0
     scripts:
       - name: Build APK
         script: |

@@ -7,15 +7,18 @@ plugins {
 android {
     namespace = "com.example.myria_app"
     compileSdk = 34
+
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlin {
         compilerOptions {
-            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8)
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
         }
     }
+
     defaultConfig {
         applicationId = "com.example.myria_app"
         minSdk = 21
@@ -23,12 +26,14 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
+
     buildTypes {
         release {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
 }
+
 flutter {
     source = "../.."
 }
