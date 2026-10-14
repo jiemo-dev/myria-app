@@ -4,18 +4,17 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
-// NOUA SINTAXĂ PENTRU AGP 9+: Folosim ApplicationExtension
 android {
     namespace = "com.example.myria_app"
-    compileSdk = 34
+    
+    // FIX FINAL: Actualizat la 36 pentru a satisface pachetele moderne
+    compileSdk = 36 
 
-    // NOUA SINTAXĂ PENTRU COMPILARE:
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    // NOUA SINTAXĂ PENTRU KOTLIN (înlocuiește vechiul kotlinOptions):
     kotlin {
         compilerOptions {
             jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
@@ -25,7 +24,10 @@ android {
     defaultConfig {
         applicationId = "com.example.myria_app"
         minSdk = 21
-        targetSdk = 34
+        
+        // FIX FINAL: Actualizat la 36
+        targetSdk = 36 
+        
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
