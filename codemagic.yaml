@@ -3,7 +3,7 @@ workflows:
     name: Android APK Build
     instance_type: mac_mini_m2
     environment:
-      flutter: 3.27.0
+      flutter: 3.24.5  # <--- ACEASTA ESTE CHEIA CARE OPREȘTE HAOSUL
     scripts:
       - name: Build APK
         script: |
