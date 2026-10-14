@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.myria_app"
-    compileSdk = 34 // <-- MUST BE 34
+    compileSdk = 34
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -22,7 +22,7 @@ android {
     defaultConfig {
         applicationId = "com.example.myria_app"
         minSdk = 21
-        targetSdk = 34 // <-- MUST BE 34
+        targetSdk = 34
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
