@@ -1,13 +1,12 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    // Pluginul Flutter trebuie să fie ultimul
     id("dev.flutter.flutter-gradle-plugin")
 }
 
 android {
     namespace = "com.example.myria_app"
-    compileSdk = 34
+    compileSdk = 36  // <--- SCHIMBAT LA 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -15,7 +14,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
-    // SINTAXA MODERNĂ KOTLIN (înlocuiește vechiul kotlinOptions)
     kotlin {
         compilerOptions {
             jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8)
@@ -25,10 +23,9 @@ android {
     defaultConfig {
         applicationId = "com.example.myria_app"
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 36 // <--- SCHIMBAT LA 36
         
-        // FIX CRUCIAL: .toInt() în loc de .toInteger()
-        versionCode = flutter.versionCode.toInt() 
+        versionCode = flutter.versionCode.toInt()
         versionName = flutter.versionName
     }
 
